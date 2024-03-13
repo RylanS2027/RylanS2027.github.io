@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My weebsite</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link id="lightSheet" rel="stylesheet" href="css/style.css">
+    <link id="darkSheet" rel="stylesheet" media="none" href="css/dark.css">
+
+</head>
+
+<body>
+    <div id="content">
+        <div id="banner">
+            <h1><u>The STUMPington Website</u></h1>
+
+        </div>
+        <div id="blogposts">
+            <div class="post">
+                <a href="about.html">About me</a> |
+                <a href="index.html">Main Page</a>
+                <a href="gameguide.html">Get To School</a>
+                <a href="bossmonster.html">Defeat Shrek!</a>
+                <a href="#" onclick="changeSheet()">Change mode</a>
+                <h2>About Me!</h2>
+                <img src="" alt="">
+                <p>My name is Rylan Stump, I'm currently a ninth grader at York Tech and taking IT as my Technical shop.
+                    I've
+                    always had an interest in computers and how they function, so far the most interesting courses I've
+                    taken are Networking and Computer Programming, both of which I really am passionate in. I am highly
+                    considering taking Networking and Cybersecurity for my Junior and Senior year, as I seem to have a
+                    calling in cyber defense, I'm in Cyber Patriot, which has made my love for Cybersecurity a lot
+                    better and a bigger understanding on how defense works for multiple different operating systems such
+                    as Linux systems and cisco.</p>
+
+                <p>Programming is also a big consideration I have in mind for my Junior and Senior year here at York
+                    Tech, as I have a new interest in making websites and want to learn more about making applications
+                    and software development. The teacher, Mr. Smith is also very straight forward as he pushes kids to
+                    their full potential and has a real passion in the Computer Programming world, he understands the
+                    students and loves gaming as much as we do. When I leave York Tech, I plan to go to college to get
+                    my Bachelor's degree in Computer Networking and Cybersecurity or Software Development.</p>
+                </p>
+            </div>
+            <div id="blogposts">
+                <h2>My hobbies!</h2>
+                <h3>Drawing</h3>
+                <p>I love to draw fictional characters, stuff like Pokemon, anime, comic strips, and horror characters.
+                    Ever since I was little, I had a connection to art and expressing myself through the drawings I put
+                    out on paper. I mostly produce drawings of horror characters, both of which I see in movies and ones
+                    that create in my head.</p>
+                <h3 style="display: block;">Pokemon/Yu-Gi-Oh card collecting</h3>
+
+                <p>Ever since I was 13, I started collecting Pokemon cards and playing the games, I collect cards from
+                    all decades and I have a rare 1st edition Dragonite and a Dark Charizard, I have about 3 binders
+                    full of the cards. I also found an interest in Yu-Gi-Oh, I started playing the game with my friends
+                    and my dad.</p>
+                <img src="pikachu_image.png" alt="Cute Pikachu" width="200" height="200">
+                <img src="yugi_image_graceful.png" alt="YuGi Standing" class="right" width="100" height="200">
+
+                <h3>Vintage Camera Collecting and photography</h3>
+                <p>I started collecting cameras around the same time as I started collecting Pokemon cards. I've always
+                    loved the history of cameras and how they've evolved to be just a feature on our phones, by just
+                    using an application. I've taken photography as a hobby just recently, after a visit from Florida in
+                    March of last year, I took some amazing pictures.</p>
+                
+                </p>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+
+    var lightMode = true;
+
+
+    function changeSheet() {
+        // make lightMode equal NOT lightMode
+        lightMode = !lightMode;
+        var lightSheet = document.getElementById("lightSheet");
+        var darkSheet = document.getElementById("darkSheet");
+
+        // if lightMode turn off, display turns dark stylesheet
+        if (lightMode == false) {
+            console.log("Turning dark mode on...");
+            darkSheet.media = "";
+            lightSheet.media = "none";
+        } else {
+            console.log("Turning light mode on...");
+            darkSheet.media = "none";
+            lightSheet.media = "";
+        }
+    }
+
+
+
+</script>
+
+</html>

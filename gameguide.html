@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My weebsite</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link id="lightSheet" rel="stylesheet" href="css/style.css">
+    <link id="darkSheet" rel="stylesheet" media="none" href="css/dark.css">
+</head>
+
+<body>
+    <div id="content">
+        <div id="banner">
+            <h1>The STUMPington website</h1>
+
+        </div>
+        <div id="blogposts">
+            <div class="post">
+                <a href="about.html">About me</a> |
+                <a href="index.html">Main Page</a>
+                <a href="gameguide.html">Get To School</a>
+                <a href="bossmonster.html">Defeat Shrek!</a>
+                <a href="#" onclick="changeSheet()">Change mode</a>
+                <h2>Play My Game</h2>
+                <p>This is Get To School a game I've made in RPG Maker MZ, It follows the character, Debian Hart and his
+                    adventures to eventually get to school. Filled with classic RPG style-like fun and close resembling
+                    to Legend of Zelda. Now a new Saul Goodman Update! Saul will be in one of the missions for you to find him, he's a good good lawyer!</p>
+
+                <p>Click <a href="GetToSchool2/gettoschoolindex.html">here</a>to play.</p>
+                </p>
+            </div>
+            <div class="post">
+                <h2>Gallery</h2>
+                <div class="gallery">
+                <h4><u>Here are some in-game pictures!</u></h4>
+
+                    <a href="img/GTS.png"> <img src="img/GTS.png"> </a>
+                    <a href="img/GTS3.png"> <img src="img/GTS3.png"> </a>
+                    <a href="img/GTS4.png"> <img src="img/GTS4.png"> </a>
+                    <a href="img/GTS5.png"> <img src="img/GTS5.png"> </a>
+                    <a href="img/GTS6.png"> <img src="img/GTS6.png"> </a>
+
+
+
+                </div>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+
+    var lightMode = true;
+
+
+    function changeSheet() {
+        // make lightMode equal NOT lightMode
+        lightMode = !lightMode;
+        var lightSheet = document.getElementById("lightSheet");
+        var darkSheet = document.getElementById("darkSheet");
+
+        // if lightMode turn off, display turns dark stylesheet
+        if (lightMode == false) {
+            console.log("Turning dark mode on...");
+            darkSheet.media = "";
+            lightSheet.media = "none";
+        } else {
+            console.log("Turning light mode on...");
+            darkSheet.media = "none";
+            lightSheet.media = "";
+        }
+    }
+
+
+
+</script>
+
+</html>

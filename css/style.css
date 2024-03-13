@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(160, 84, 107);
+    border: 1px solid #000000;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    width: 60%;
+    margin: auto;
+    
+    
+}
+#banner {
+    background-color: red;
+    text-align: center;
+    border: 1px solid #000000;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 20%;
+
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+#blogposts {
+    margin: 10px;
+    border: 1px solid #000000;
+    border-color: blue;
+    border-radius: 10%;
+    margin: 20px;
+    padding: 10px;
+    border-width: 30px;
+}
+
+#teaposts {
+    margin: 10px;
+    border: 1px solid;
+    border-color: rgb(253, 0, 169);
+    border-radius: 10%;
+    margin: 20px;
+    padding: 30px;
+    border-width: 40px;
+
+}
+
+.imgLeft {
+    float: left;
+    margin-right: 10px;
+
+}
+
+.imgBlog {
+    width: 200px;
+}
+
+.post .left {
+    float: left; 
+    margin-right: 10px;
+    
+
+}
+
+.post img {
+    width: 200px;
+    
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+text {
+    color: #000000;
+}
+a:visited {
+    color: whitesmoke
+}

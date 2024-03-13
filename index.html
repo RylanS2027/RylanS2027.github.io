@@ -1,18 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My weebsite</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link id="lightSheet" rel="stylesheet" href="css/style.css">
+    <link id="darkSheet" rel="stylesheet" media="none" href="css/dark.css">
+
 </head>
+
 <body>
     <div id="content">
-        <h1>Welcome to my website!!!</h1>
-        <p>Click the image below to play my game!!!</p>
-         <a href="GetToSchool2/index.html">Get to School
-            <img src="img/Oppa Gangnam Style!!!.jpg" alt="Oppa Gangnam Style">
-         </a>
-    </div>
+        <div id="banner">
+            <h1> <u>The STUMPington Website </u></h1>
+        </div>
+        <div id="blogposts">
+            <div class="post">               
+                <a href="about.html">About me</a> |
+                <a href="index.html">Main Page</a>
+                <a href="gameguide.html">Get To School</a>
+                <a href="bossmonster.html">Defeat Shrek!</a>
+                <a href="#" onclick="changeSheet()">Change mode</a>
+                
+                <h2>About Me and my Website!</h2>
+                <p>My name is Rylan Stump and I this is my website to showcase me, my knowlege on .HTML, my knowlege on
+                    Javascript, and my RPG Maker game. I have a lot of knowlege on Computers and Networking
+                    systems. I'm going to York Tech for IT and plan to either choose Networking or Programming. My
+                    favorite video games are Half Life, Red Dead Redemption 2, Hypnospce Outlaw, and Fallout 4.</p>
+                <img src="halflifelogo.png" alt="Half Life logo">
+                <img src="rdr2.webp" alt="RDR 2 Logo" class="right">
+                <img src="Hypnolaw.png" alt="HypnoSpace Outlaw">
+                <img src="vault_boy.png" alt="Vault Boy">
+                <p>Click <a href="about.html">here</a>to learn more about the creator!</p>
+                </p>
+            </div>
+            <div id="blogposts">
+                <div class="post">
+                    <h2 style="display: block;"> Get To School</h2>
+                    <img src="img/GTS.png" alt="Get To School loading screen" class="Left">
+                    <p>Get To School is a smash hit Indie success about getting to school... presumably. I made this
+                        game in Computer Programming using RPG Maker MZ. It follows the character, Debian and his
+                        journey getting to school on time, and in one peace.</p>
+                    <p>Click <a href="GetToSchool2/gettoschoolindex.html">here</a>to play.</p>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="teaposts">
+         <h2>Oop! You found Mr. WolfSmith having his tea time!</h2>
+        <img src="wolf_sips.jfif" alt="Wolf sipping tea" width="350px" height="350px">
+        <p>Might as well leave now... I hear he gets violent around kids with cellphones...</p>
+
+        <p>Seriously! GO!</p>
+
+        </div>
 </body>
+
+<script>
+
+    var lightMode = true;
+
+
+    function changeSheet() {
+        // make lightMode equal NOT lightMode
+        lightMode = !lightMode;
+        var lightSheet = document.getElementById("lightSheet");
+        var darkSheet = document.getElementById("darkSheet");
+
+        // if lightMode turn off, display turns dark stylesheet
+        if (lightMode == false) {
+            console.log("Turning dark mode on...");
+            darkSheet.media = "";
+            lightSheet.media = "none";
+        } else {
+            console.log("Turning light mode on...");
+            darkSheet.media = "none";
+            lightSheet.media = "";
+        }
+    }
+
+
+
+</script>
+
 </html>

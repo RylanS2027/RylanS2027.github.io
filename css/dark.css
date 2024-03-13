@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(46, 39, 46);
+    border: 1px solid #9c9999;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    
+}
+h1 {
+    color:rgb(169, 171, 173)
+}
+h2 {
+    color: rgb(169, 171, 173);
+}
+p {
+    color: rgb(169, 171, 173);
+}
+
+a {
+    color:rgb(20, 20, 87)
+}
+
+a:hover {
+    color:rgb(54, 38, 112)
+}
+
+a:visited {
+    color:#5f0707
+}
+#content {
+    width: 60%;
+    margin: auto;
+    
+    
+}
+#banner {
+    background-color: rgb(103, 60, 143);
+    text-align: center;
+    border: 1px solid #bdb1b1;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 20%;
+
+}
+
+#blogposts {
+    margin: 10px;
+    border: 1px solid #000000;
+    border-color: rgb(87, 44, 104);
+    border-radius: 10%;
+    margin: 20px;
+    padding: 10px;
+    border-width: 30px;
+}
+
+.imgLeft {
+    float: left;
+    margin-right: 10px;
+
+}
+
+.imgBlog {
+    width: 200px;
+}
+
+.post .left {
+    float: left; 
+    margin-right: 10px;
+    
+
+}
+
+.post img {
+    width: 200px;
+    
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+a:visited {
+    color: rgb(255, 29, 29)
+}
